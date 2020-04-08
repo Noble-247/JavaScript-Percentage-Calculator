@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator | JavaScript Tutorial</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25vh;
+            margin-bottom: 25vh;
+        }
+        
+        main {
+            text-align: center;
+            background-color: #a8956d;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            width: 30%;
+            min-width: 300px;
+            border-radius: 20px;
+        }
+        
+        input[type="text"] {
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+        }
+        
+        input[type="text"]:hover,
+        input[type="submit"]:hover {
+            background-color: #d3c5a7;
+        }
+        
+        input[type="submit"] {
+            padding: 5px;
+            width: 50%;
+            border-radius: 10px;
+        }
+        
+        .errorMessage {
+            color: white;
+            font-weight: bold;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <h1>Percentage Calculator</h1>
+            <h4>X is what % of Y?</h4>
+
+            <form id="XIsWhatPercentOfY" action="#">
+                <p class="errorMessage"></p>
+                <input type="text" name="x-value" id="valueOfX"> <br>
+                <p>is what % of</p>
+                <input type="text" name="y-value" id="valueOfY"> <br>
+                <p>?</p>
+                <input id="button" type="submit" value="Calculate">
+            </form>
+            <h3 id="resultField"></h3>
+        </div>
+    </main>
+    <script src="calc.js"></script>
+</body>
+
+</html>
